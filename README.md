@@ -14,7 +14,7 @@ In Alien Invasion, the player controls a ship that appears at the bottom center 
 
 ## Screenshots
 
-![Alt text](https://github.com/adrian88szymanski/Python_Crash_Course_Eric_Matthes/blob/master/alien_invasion/5.png)
+![Alt text](https://github.com/Gorthin/AlienInvasion/blob/main/5.png)
 
 ## :video_game: Controls
 
@@ -31,7 +31,7 @@ In Alien Invasion, the player controls a ship that appears at the bottom center 
 ### Cloning the Repository
 
 ```
-$ git clone https://github.com/adrian88szymanski/Python_Crash_Course_Eric_Matthes/tree/master/alien_invasion.git
+$ git clone https://github.com/Gorthin/AlienInvasion.git
 
 $ cd Alien-Invasion
 ```
