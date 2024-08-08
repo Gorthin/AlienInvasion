@@ -1,4 +1,5 @@
 #! python3
+import pygame
 
 class Settings:
     """The class is designed to store all game settings."""
@@ -9,6 +10,7 @@ class Settings:
         self.screen_width = 1200
         self.screen_height = 800
         self.bg_color = (135, 206, 250)
+        self.background_image = pygame.image.load("images/sky.bmp")
 
         #Ship
         self.ship_limit = 3
@@ -32,7 +34,7 @@ class Settings:
         """Initalization settings which change during in game"""
         self.ship_speed = 1.5
         self.bullet_speed = 1.5
-        self.alien_speed = 1.0
+        self.alien_speed = 0.7
 
         self.fleet_direction = 1
 

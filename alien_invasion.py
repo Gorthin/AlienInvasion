@@ -21,13 +21,10 @@ class AlienInvasion:
         pygame.init()
         self.settings = Settings()
 
-        self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+        self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
         self.settings.screen_width = self.screen.get_rect().width
         self.settings.screen_height = self.screen.get_rect().height
         pygame.display.set_caption("Alien invasion")
-
-        #self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
-        #pygame.display.set_caption("Alien invasion")
 
         #Preparation of a copy of the game statistics
         self.stats = GameStats(self)
@@ -237,7 +234,7 @@ class AlienInvasion:
     def _update_screen(self):
         """Updates the images on the screen and goes to a new screen."""
         # Refresh the screen during each iteration of the loop
-        self.screen.fill(self.settings.bg_color)
+        self.screen.blit(self.settings.background_image, (0, 0))
         self.ship.blitme()
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
